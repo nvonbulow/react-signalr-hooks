@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "jsx": "react-jsx",
+        "target": "ES5",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "module": "commonjs",
+        "allowJs": false,
+        "esModuleInterop": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true
+    },
+    "exclude": [ "node_modules" ],
+    "include": [ "src" ]
+}
