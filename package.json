@@ -1,21 +1,32 @@
 {
   "name": "react-signalr-hooks",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A React wrapper for SignalR",
   "types": "lib/index.d.ts",
-  "main": "./lib",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc"
   },
   "author": "nvonbulow",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvonbulow/react-signalr-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "signalr",
+    "hooks",
+    "socket",
+    "websocket"
+  ],
   "devDependencies": {
     "@types/node": "^16.0.0",
     "@types/react": "^17.0.13",
+    "react": "^17.0.2",
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@microsoft/signalr": "^5.0.7",
-    "react": "^17.0.2"
+    "@microsoft/signalr": "^5.0.7"
   }
 }
