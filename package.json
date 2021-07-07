@@ -5,10 +5,10 @@
   "types": "lib/index.d.ts",
   "main": "./lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "nvonbulow",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.0.0",
     "@types/react": "^17.0.13",
