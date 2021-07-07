@@ -6,6 +6,7 @@ export function createSignalRProvider<
     T extends SignalRHub<C, M>,
     C extends string,
     M extends string>(context: SignalRContext<T, C, M>): SignalRProvider {
+
     const Provider = function SignalRProvider({
         children,
         hubUrl,
@@ -18,22 +19,25 @@ export function createSignalRProvider<
 
         function connect() {
             const connection = createConnection(hubUrl, connectionOptions, autoReconnect);
-
             context.connection = connection;
+
+            connection.start();
         }
 
         function cleanup() {
-
+            context?.connection.stop();
         }
 
         useEffect(() => {
+            if(connectEnabled) {
+                connect();
+            }
             
             return cleanup;
         }, [connectEnabled, hubUrl, ...dependencies]);
 
         return children;
     }
-
 
     return Provider;
 }
