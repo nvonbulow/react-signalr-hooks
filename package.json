@@ -1,8 +1,8 @@
 {
   "name": "react-signalr-hooks",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A React wrapper for SignalR",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
