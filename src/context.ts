@@ -16,13 +16,13 @@ export function createSignalRContext<
     M extends string 
 >(): SignalRContext<T, C, M> {
 	const context: SignalRContext<T, C, M> = {
-		connection: null,
-		useCallback: null as any, // assigned later once the rest of the context is built
-		useMethod: null as any,   // same as above ^^^
-		invoke: null as any,      // ^^^
-		Provider: null as any,    // ^^^
+        connection: null,
+        useCallback: null as any, // assigned later once the rest of the context is built
+        useMethod: null as any,   // same as above ^^^
+        invoke: null as any,      // ^^^
         subscribe: null as any,   // ^^^
         unsubscribe: null as any, // ^^^
+        Provider: null as any,    // ^^^
 	};
 
     context.useCallback = createSignalRCallbackHook(context);

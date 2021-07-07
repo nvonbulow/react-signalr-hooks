@@ -6,7 +6,7 @@ export type SignalRHubMethods<M extends string> = {
 }
 
 export type SignalRHubCallbacks<C extends string> = {
-	[key in C]: <F extends (...args: any) => any>(...args: Parameters<F>) => void;
+	[key in C]: <F extends (...args: any) => void>(...args: Parameters<F>) => void;
 }
 
 export interface SignalRHub<
